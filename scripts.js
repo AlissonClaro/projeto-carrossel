@@ -35,9 +35,3 @@ nextButton.onclick = () => moveItemsOnClick('next')
 backButton.onclick = () => moveItemsOnClick('back')
 
 
-$(document).ready(function(){
-    $('.thumb-item').ripples({
-    resolution: 200,
-    perturbance: .004,
-});
-});
