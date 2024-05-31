@@ -22,15 +22,44 @@ body {
     position: relative;
     z-index: 2;
     margin: auto;
+    transition: 0.4s;
 }
+
+
 
 header {
     & a {
         color: #eee;
         margin-right: 40px;
         font-weight: 400;
+
     }
 }
+
+.head a {
+    transition: 0.5s;
+}
+
+.head:hover a {
+    opacity: 0.25;
+}
+
+.head a:hover {
+    opacity: 1;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        translate: 0 50px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
 
 .container {
     width: 100%;
